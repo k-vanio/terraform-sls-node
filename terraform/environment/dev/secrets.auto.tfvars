@@ -1,0 +1,10 @@
+jwt_secret = "c3RvcmVhY3Rpdml0eXN0cnVnZ2xlY2hvaWNlYW1vdW4="
+admin_id = "d2345b22-8df8-11ee-b9d1-0242ac120002"
+admin_name = "admin"
+admin_email = "admin@system.com"
+admin_password = "$2a$10$LJSmFy641wwBb6LqieMweu/5qb5VQma8cmQJ4gJ/0F9j.XFscfd/O"
+
+email_from = "vanio@neio.network"
+email_from_password = "Aa181618@#@"
+email_to = "almeida.vanio@gmail.com"
+smtp_server = "smtp.zoho.com"
