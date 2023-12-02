@@ -48,6 +48,7 @@ functions:
           
   list_bookings:
     role: "${ssm:${self:custom.stage}-list-bookings-iam-role}"
+    memorySize: ${self:custom.memorySize.${self:custom.stage}}
     handler: list-bookings/handler.list
     environment:
       DYNAMODB_BOOKINGS: ${ssm:${self:custom.stage}-dynamodb-bookings-table}
@@ -65,3 +66,6 @@ functions:
 
 custom:
   stage: ${opt:stage, self:provider.stage}
+  memorySize:
+    dev: 128
+    prod: 256
